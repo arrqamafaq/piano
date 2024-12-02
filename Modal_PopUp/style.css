@@ -1,0 +1,99 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100;
+  height: 100%;
+}
+main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  position: relative;
+}
+
+.modalOpen {
+  width: 60%;
+  height: 200px;
+  color: white;
+  border-radius: 20px;
+  max-width: 350px;
+  background-color: rgb(48, 48, 48);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  justify-content: center;
+  padding: 20px;
+}
+.modalOpen h3 {
+  font-size: 28px;
+  font-weight: 500;
+}
+.modalOpen button {
+  padding: 10px 12px;
+  width: 30%;
+  font-size: 18px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  background-color: #70707085;
+  color: white;
+  font-weight: 600;
+}
+.modalOpen button:hover {
+  background-color: #57575785;
+}
+
+.modal-popup {
+  animation-delay: 0;
+  animation: popAnime .5s linear ;
+  position: absolute;
+  width: 60%;
+  min-height: 200px;
+  color: rgb(117, 255, 53);
+  border-radius: 20px;
+  max-width: 350px;
+  background-color: rgba(26, 26, 26);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+}
+@keyframes popAnime {
+  0% {
+    opacity: 0;
+  }
+  /* 50% {
+    opacity: 0.5;
+  } */
+  100% {
+    opacity: 1;
+  }
+}
+
+.baloons {
+  background: url(/balloons.png);
+  height: 80px;
+  width: 80px;
+  background-position: center;
+  background-size: cover;
+}
+.cross-icon {
+  text-align: right;
+  width: 100%;
+  color: red;
+}
+.cross-icon i {
+  cursor: pointer;
+}
